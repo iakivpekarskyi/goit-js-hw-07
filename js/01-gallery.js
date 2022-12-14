@@ -95,4 +95,12 @@ function onGalleryClick(event) {
   );
 
   imageInstance.show();
+};
+
+
+gallery.addEventListener('keydown',e => {
+  if (e.key === 'Escape') {
+    imageInstance.close();
+  }
 }
+);
